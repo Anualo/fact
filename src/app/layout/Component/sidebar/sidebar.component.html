@@ -1,0 +1,66 @@
+<ul class="userInfo"> 
+    <li><a href="#"><img src="assets/images/user.png" alt="user"/></a></li> 
+    <li><h3>Admin</h3></li> 
+    <li><span>admin@sitename.com</span></li> 
+</ul> 
+<ul class="mainNav" id="mainNav"> 
+    <li
+    > 
+        <a  [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-speedometer2"></i> <label>Dashboard</label></a> 
+    </li> 
+    <li>
+        <a  class=""[routerLink]="['/layout/customer_management_system']"  routerLinkActive="active"><i class="bi bi-people"></i> <label>Customer Management</label></a> 
+    </li> 
+    <li> 
+        <a [routerLink]="['/layout/map']"  routerLinkActive="active"><i class="bi bi-map"></i> <label>Map View</label></a> 
+    </li> 
+    <li class="mainNav__dropdown"> 
+        <a style="color: white;"(click)="toogled()" [ngClass]="toogleDrop ? 'success' : 'danger'"><i class="bi bi-house"></i> <label>Villa Management</label><i class="bi bi-chevron-down"></i></a> 
+        <ul class="mainNav__sub toggle" *ngIf="toogleDrop"> 
+            <li> 
+                <a [routerLink]="['/layout/Villa_Management/plots']"  routerLinkActive="active"><i class="bi bi-chevron-right"></i> <label>Plots</label></a> 
+            </li> 
+            <li> 
+                <a [routerLink]="['/layout/Villa_Management/add_new_plots']"  routerLinkActive="active"><i class="bi bi-chevron-right"></i> <label>Add New Plots</label></a> 
+            </li> 
+            <li> 
+                <a [routerLink]="['/layout/Villa_Management/search_plots']" ><i class="bi bi-chevron-right"></i> <label>Search Plots</label></a> 
+            </li> 
+        </ul> 
+    </li> 
+    <li> 
+        <a class=""[routerLink]="['/layout/account_management']"  routerLinkActive="active"><i class="bi bi-journal"></i> <label>Account Management</label></a> 
+    </li> 
+    <li> 
+        <a  class=""[routerLink]="['/layout/audit_report']"  routerLinkActive="active"><i class="bi bi-people"></i> <label>Audit Report</label></a> 
+    </li> 
+</ul> 
+<h2 class="pageCover__body__left__header">System Management</h2> 
+<ul class="additionalNav"> 
+    <li> 
+        <a [routerLink]="['/layout/user_management']"  routerLinkActive="active"><i class="bi bi-person-workspace"></i> <label>User Management</label></a> 
+    </li> 
+    <li class="mainNav__dropdown"> 
+        <a style="color: var(--themeOrange);"(click)="toggled()"[ngClass]="toggleDrop ? 'success' : 'danger'"><i class="bi bi-house"></i> <label>Download Reports</label><i class="bi bi-chevron-down"></i></a> 
+        <ul class="mainNav__sub toggle" *ngIf="toggleDrop"> 
+            <li> 
+                <a  style="color: var(--themeOrange);" [routerLink]="['/layout/Download_Reports/plot_status_report']"  routerLinkActive="active"><i class="bi bi-chevron-right"></i> <label>Plots Status Report</label></a> 
+            </li> 
+            <li> 
+                <a  style="color: var(--themeOrange);"  style="color: var(--themeOrange);" [routerLink]="['/layout/Download_Reports/accounts_report']"  routerLinkActive="active"><i class="bi bi-chevron-right"></i> <label>Accounts Report</label></a> 
+            </li> 
+          
+        </ul> 
+    </li> 
+    <li> 
+        <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-download"></i> <label>Download Database</label></a> 
+    </li> 
+    <li> 
+        <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-key"></i> <label>Change Password</label></a> 
+    </li> 
+    <li> 
+        <a href="/"><i class="bi bi-box-arrow-right"></i> <label>Logout</label></a> 
+    </li> 
+</ul>
+
+

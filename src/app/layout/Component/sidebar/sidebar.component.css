@@ -1,0 +1,10 @@
+.mainNav li a.active {
+    background-color: var(--colorMainNavHighlite);
+    border-radius: 5px;
+}
+.mainNav__dropdown .mainNav__sub{
+    display: block;
+}
+.mainNav__dropdown .success  .bi-chevron-down::before {
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,27 @@
+<div class="pageCover">
+    <ul class="pageCover__header" id="header">
+      <li class="pageCover__header__logo" id="logo">
+          <!-- <a href="dashboard.html" id="logo">  -->
+        <img src="assets/images/logo-black.png" class="pageCover__header__logo__big" alt="logo" /> 
+        <img src="assets/images/logo-black-darkTheme.png" class="pageCover__header__logo__big pageCover__header__logo__big--darkTheme" alt="logo" /> 
+        <img src="assets/images/small_logo.png" class="pageCover__header__logo__small" alt="logo" /> 
+        <!-- </a> -->
+      </li>
+      <li class="pageCover__header__nav">
+        <app-header (push)="push()"></app-header>
+      </li>
+      
+    </ul>
+    <div class="pageCover__body">
+        <div class="pageCover__body__left">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="pageCover__body__right">
+            <div class="pageCover__body__right__content">
+                <router-outlet></router-outlet>
+                </div>
+                <app-footer></app-footer>
+                </div>
+
+               
+    </div>

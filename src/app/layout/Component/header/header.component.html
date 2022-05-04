@@ -1,0 +1,105 @@
+<ul class="headerNav"> 
+    <li class="headerNav__toggle"><button   type="button" (click)="push.emit()" class="toggleLeftNav"><i class="bi bi-list"></i></button><h3 class="headerNav__pageTitle"><span></span></h3></li> 
+      <li class="headerNav__notify"> 
+          <button type="button" class="headerNav__notify__btn"><i (click)="notfi()" class="bi bi-bell-fill"></i> <span class="count">10</span></button> 
+          <div  *ngIf="toggleNotification"class="popUpMenu"> 
+          <ul class="nav nav-tabs popUpMenu_tab" id="myTab" role="tablist"> 
+            <li class="nav-item" role="presentation"> 
+              <button class="nav-link active" (click)="viewall()" id="view_all-tab" data-bs-toggle="tab" data-bs-target="#view_all" type="button" role="tab" aria-controls="view_all" aria-selected="true"> 
+                View All 
+              </button> 
+              </li> 
+              <li class="nav-item" role="presentation"> 
+              <button  (click)="system()"class="nav-link " id="system-tab" data-bs-toggle="tab" data-bs-target="#system" type="button" role="tab" aria-controls="system" aria-selected="true"> 
+                System 
+              </button> 
+              </li> 
+              <li class="nav-item" role="presentation"> 
+                <button  (click)="transactions()" class="nav-link " id="transactions-tab" data-bs-toggle="tab" data-bs-target="#transactions" type="button" role="tab" aria-controls="Transactions" aria-selected="true"> 
+                  Transactions 
+                </button> 
+                </li> 
+                <li class="nav-item" role="presentation"> 
+                  <button (click)="plots()"  class="nav-link" id="plots_updates-tab" data-bs-toggle="tab" data-bs-target="#plots_updates" type="button" role="tab" aria-controls="plots_updates" aria-selected="true"> 
+                    Plots Updates 
+                  </button> 
+                </li> 
+                <li class="nav-item" role="presentation"> 
+                  <button (click)="others()"  class="nav-link" id="others-tab" data-bs-toggle="tab" data-bs-target="#others" type="button" role="tab" aria-controls="others" aria-selected="true"> 
+                    Others 
+                    </button> 
+                </li> 
+            </ul> 
+            <div class="popUpMenu_tabContent tab-content" id="myTabContent"> 
+              <div class="tab-pane fade show active" id="view_all" role="tabpanel" aria-labelledby="view_all-tab"> 
+                  <div class="popUpMenu_tabContent--body"> 
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                  </div> 
+                  <div class="popUpMenu_tabContent--body"> 
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                  </div> 
+                  </div> 
+                  <div class="tab-pane fade" id="system" role="tabpanel" aria-labelledby="system-tab"> 
+                    <div class="popUpMenu_tabContent--body"> 
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                    </div> 
+                    <div class="popUpMenu_tabContent--body"> 
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                    </div> 
+                    <div class="popUpMenu_tabContent--body"> 
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                    </div> 
+                </div> 
+                <div class="tab-pane fade " id="transactions" role="tabpanel" aria-labelledby="transactions-tab"> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+              </div> 
+              <div class="tab-pane fade" id="plots_updates" role="tabpanel" aria-labelledby="plots_updates-tab"> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+              </div> 
+              <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab"> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+                <div class="popUpMenu_tabContent--body"> 
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </li> 
+        <li class="headerNav__notify__settings"> 
+          <button type="button" class="headerNav__notify__settings__btn"><i class="bi bi-gear-fill" (click)="setting()"></i></button> 
+        <div *ngIf="toogleSetting"class="popUpMenu toggle"> 
+          <ul class="popUpMenu__dropmenu"> 
+            <li> 
+              <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-people"></i> <label>My Profile</label></a> 
+            </li> 
+            <li> 
+              <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active" (click)="color()" class="darkTheme"><i  class="bi bi-moon-stars-fill"></i> <label>Change Theme</label></a> 
+            </li> 
+            <li> 
+              <a [routerLink]="['/']"  routerLinkActive="active"><i class="bi bi-box-arrow-right"></i> <label>Logout</label></a> 
+            </li> 
+          </ul> 
+        </div> 
+      </li> 
+  </ul>

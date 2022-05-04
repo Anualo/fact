@@ -1,0 +1,191 @@
+<div class="slideLeftBox toggle">
+    <div class="slideLeftBox__fade"></div>
+    <div class="slideLeftBoxCover slideLeftBoxCover--headerFixed slideLeftBoxCover--footerFixed">
+      <div class="slideLeftBox__header">
+        <div>Add New Transaction</div>
+        <i  (click)="close()" id="close" class="bi bi-box-arrow-right slideLeftBox__header__close"></i>
+      </div>
+      <div class="container-fluid slideLeftBox__body">
+        <div class="row">
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Transaction ID</label>
+                    <input type="text" placeholder="Transaction ID" class="form-control" />
+                </div>
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>User</label>
+                    <input type="text" placeholder="User" class="form-control" />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <i class="bi bi-info-circle-fill btnIcon text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Plot ID</label>
+                    <input type="text" placeholder="Plot ID" class="form-control" />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <i class="bi bi-info-circle-fill btnIcon text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Old Transaction ID</label>
+                    <input type="text" placeholder="Old Transaction ID" class="form-control" />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <i class="bi bi-info-circle-fill btnIcon text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Old Customer</label>
+                    <select class="form-control">
+                      <option>Old Customer</option>
+                    </select>
+                  
+                </div>
+              </div>
+              <div class="col-3">
+                    <div class="input-group">
+                  <i class="bi bi-info-circle-fill btnIcon text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Customer</label>
+                    <select class="form-control">
+                      <option>Customer</option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <i class="bi bi-person-circle btnIcon text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Type</label>
+                    <select class="form-control">
+                      <option>Type</option>
+                    </select>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <i class="bi bi-info-circle-fill btnIcon text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Status</label>
+                    <input type="text" placeholder="Transaction ID" class="form-control" disabled />
+                </div>
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+          </div>
+          
+           <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+               <div class="input-group iconInput">
+                     <label>Transaction Date</label>
+                    <input type="text" class="form-control" placeholder="Select date from" />
+                  </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <i class="bi bi-calendar3 btnIcon text-secondary"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Joind Parties</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row d-flex align-items-end">
+              <div class="col">
+                <div class="input-group flex-column">
+                    <label>Note</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="slideLeftBox__footer">
+        <button class="btnUI"><i class="bi bi-save"></i> Save</button>
+        <button class="btnUI"><i class="bi bi-x-circle"></i> Cancel</button>
+      </div>
+    </div>
+  </div>

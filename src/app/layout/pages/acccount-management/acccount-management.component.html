@@ -1,0 +1,231 @@
+<div class="container-fluid">
+    <div class="row navCards navCards--Mini pt-4">
+        <div class="col-auto">
+          <div class="pt-3">
+            <div class="pb-3"><label class="">Select Date</label><i class="bi bi-calendar3 ms-3"></i></div>
+            <div class="row">
+              <div class="col">
+                <select class="form-select form-elementUI">
+                  <option>15-04-2022</option>
+                  <option>16-04-2022</option>
+                </select>
+              </div>
+              <div class="col-auto pt-1"><i class="bi bi-arrow-repeat h3 mb-0 pointer text-success"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="navCards__item themeGreenLite">
+            <h3>Cash in Hand</h3>
+            <h4>545K</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div class="navCards__item themeMaroon">
+            <h3>Pending Payments</h3>
+            <h4>15,456k</h4>                    
+          </div>
+        </div>
+        <div class="col">
+          <div class="navCards__item themePurple">
+            <h3>Recived Today</h3>
+            <h4>15,456k</h4>               
+          </div>
+        </div>
+        <div class="col">
+          <div class="navCards__item themeBlue">
+            <h3>Paid Today</h3>
+            <h4>456K</h4>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid p-4 pb-2 pageFilter">
+    <div class="row">
+      <div class="col pb-4">
+        <div class="pageTools__search">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search Report / Transaction ID" class="form-control pageTools__form-control">
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </div>
+      </div>   
+      <div class="col-auto pb-4">
+        <a>    <button type="buttton"(click)="newTransaction()"class="btnUI btn-success"id="newTransaction"><i class="bi bi-plus-circle"></i> New Transaction</button></a>
+      </div>              
+   
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="input-group">
+          <select class="form-select form-elementUI"><option>Select Report Type</option></select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="input-group iconInput">
+          <input type="text" class="form-control form-elementUI" placeholder="Select date from" /><i class="bi bi-calendar3"></i>
+        </div>
+      </div>
+      <div class="col">
+        <div class="input-group iconInput">
+          <input type="text" class="form-control form-elementUI" placeholder="Date" /><i class="bi bi-calendar3"></i>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button type="button" class="btnUI">Generate</button>
+      </div>
+      <div class="col-auto">
+        <button type="button" class="btnUI">Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table tableUI">
+      <thead>
+        <tr class="text-transform">
+          <th><input type="checkbox" /></th>
+          <th>Coustomer Name</th>
+          <th>Type</th>
+          <th>Transaction ID</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>VC-787-232-6745</td>
+          <td>Tax</td>
+          <td><span class="text-truncate d-inline">01-01-2020-15-02-2022</span></td>
+          <td>75KB</td>
+          <td><span class="text-truncate d-inline">Mar 03, 2022 20:05:08</span></td>
+          <td>
+            <ul class="tableUI__action__ul">
+              <li><i class="bi bi-eye text-warning"></i></li>
+              <li><i class="bi bi-printer text-primary"></i></li>
+              <li><i class="bi bi-download text-success"></i></li>                        
+            </ul>
+          </td>
+        </tr>  
+      </tbody>                  
+    </table>
+  </div>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center mt-3 navigationUI">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-chevron-left"></i> Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next <i class="bi bi-chevron-right"></i></a>
+      </li>
+    </ul>
+  </nav>

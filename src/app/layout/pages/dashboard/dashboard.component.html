@@ -1,0 +1,190 @@
+<ul class="welcomeCard">
+    <li><img src="assets/images/user.png" alt="logo" /></li>
+    <li>
+      <h2>Welcome back, Adimn!</h2>
+      <h3><i class="bi bi-bell"></i> You have 2 new messages and 15 new tasks</h3>
+    </li>
+  </ul>
+  <div class="container-fluid px-4">
+    <div class="cardBox">
+      <div class="cardBox__header">
+        <div class="cardBox__header__left"><h4>Plot Status across villas by Month </h4></div>
+        <div class="cardBox__header__right"><h4>Villa Information</h4></div>
+      </div>
+      <div class="cardBox__content cardBox__content--flex">
+        <div class="cardBox__content__left"></div>
+        <div class="cardBox__content__right"></div>
+      </div>
+    </div>
+    <div class="cardBox">
+      <div class="cardBox__header">
+        <h4>Plot Status across villas by Month </h4>
+      </div>
+      <div class="cardBox__content"></div>
+    </div>
+    <ul class="navCards navCards--Mini">
+      <li>
+        <div class="navCards__item themePurple">
+          <h3>Total Customer</h3>
+          <h4>15,456k</h4>               
+        </div>
+      </li>
+      <li>
+        <div class="navCards__item themeMaroon">
+          <h3>Pending Payments</h3>
+          <h4>15,456k</h4>                    
+        </div>
+      </li>
+      <li>
+        <div class="navCards__item themeGreenLite">
+          <h3>Available Villa</h3>
+          <h4>545</h4>
+        </div>
+      </li>
+      <li>
+        <div class="navCards__item themeBlue">
+          <h3>Handover</h3>
+          <h4>456</h4>
+        </div>
+      </li>
+    </ul>
+    <ul class="navCards">
+      <li>
+        <div class="navCards__item">
+          <h3>Customer Management</h3>
+          <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-people"></i></a>                     
+        </div>
+      </li>
+      <li>
+        <div class="navCards__item">
+          <h3>View Villas</h3>
+          <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-house"></i></a>                     
+        </div>
+      </li>
+      <li>
+        <div class="navCards__item">
+          <h3>Accounts</h3>
+          <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-journal"></i></a>                     
+        </div>
+      </li>
+      <li>
+        <div class="navCards__item">
+          <h3>Audit Report</h3>
+          <a [routerLink]="['/layout/dashboard']"  routerLinkActive="active"><i class="bi bi-journal-check"></i></a>                     
+        </div>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="col">
+        <div class="cardBox">
+          <div class="cardBox__header">
+            <h4>Recent Transaction</h4>
+          </div>
+          <div class="cardBox__content">
+            <ul class="cardList">
+              <li>
+                  <h4>Received from Raelynn</h4>
+                  <ul class="cardList__info">
+                    <li> 15 Feb 2022 | Cheque paymennt</li>
+                    <li class="cardList__info__digit">86,800.00</li>
+                  </ul>
+              </li>
+              <li>
+                  <h4>Received from Raelynn</h4>
+                  <ul class="cardList__info">
+                    <li> 15 Feb 2022 | Cheque paymennt</li>
+                    <li class="cardList__info__digit">86,800.00</li>
+                  </ul>
+              </li>
+              <li>
+                  <h4>Received from Raelynn</h4>
+                  <ul class="cardList__info">
+                    <li> 15 Feb 2022 | Cheque paymennt</li>
+                    <li class="cardList__info__digit">86,800.00</li>
+                  </ul>
+              </li>
+              <li class="cardList__select">
+                  <h4>Received from Raelynn</h4>
+                  <ul class="cardList__info">
+                    <li> 15 Feb 2022 | Cheque paymennt</li>
+                    <li class="cardList__info__digit">86,800.00</li>
+                  </ul>
+              </li>
+              <li>
+                  <h4>Received from Raelynn</h4>
+                  <ul class="cardList__info">
+                    <li> 15 Feb 2022 | Cheque paymennt</li>
+                    <li class="cardList__info__digit">86,800.00</li>
+                  </ul>
+              </li>
+              <li>
+                  <h4>Received from Raelynn</h4>
+                  <ul class="cardList__info">
+                    <li> 15 Feb 2022 | Cheque paymennt</li>
+                    <li class="cardList__info__digit">86,800.00</li>
+                  </ul>
+              </li>
+            </ul>
+            <div class="cardBox__footer"> 
+              <a [routerLink]="['/layout/dashboard/recent_transaction']"  routerLinkActive="active">  <button type="button" class="btn"> View All</button> </a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="cardBox">
+          <div class="cardBox__header">
+            <h4>Over due Customers</h4>
+          </div>
+          <div class="cardBox__content">
+            <ul class="cardList">
+              <li>
+                  <ul class="cardList__info">
+                    <li>
+                      <h4>Mr Abdul Haafiz</h4>
+                      <div>Coustomer ID 569-98621</div>
+                      <div class="cardList__select">Elapsed time 18 days</div>
+                    </li>
+                    <li class="cardList__info__digit">266,800.000 <i class="bi bi-chevron-right"></i> </li>
+                  </ul>
+              </li>
+              <li>
+                <ul class="cardList__info">
+                  <li>
+                    <h4>Mr Abdul Haafiz</h4>
+                    <div>Coustomer ID 569-98621</div>
+                    <div class="cardList__select">Elapsed time 18 days</div>
+                  </li>
+                  <li class="cardList__info__digit">266,800.000 <i class="bi bi-chevron-right"></i> </li>
+                </ul>
+            </li>
+            <li>
+              <ul class="cardList__info">
+                <li>
+                  <h4>Mr Abdul Haafiz</h4>
+                  <div>Coustomer ID 569-98621</div>
+                  <div class="cardList__select">Elapsed time 18 days</div>
+                </li>
+                <li class="cardList__info__digit">266,800.000 <i class="bi bi-chevron-right"></i> </li>
+              </ul>
+          </li>
+          <li>
+            <ul class="cardList__info">
+              <li>
+                <h4>Mr Abdul Haafiz</h4>
+                <div>Coustomer ID 569-98621</div>
+                <div class="cardList__select">Elapsed time 18 days</div>
+              </li>
+              <li class="cardList__info__digit">266,800.000 <i class="bi bi-chevron-right"></i> </li>
+            </ul>
+        </li>
+            </ul>
+            <div class="cardBox__footer">
+            <a [routerLink]="['/layout/dashboard/over_due_customers']"  routerLinkActive="active">  <button type="button" class="btn"> View All </button> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

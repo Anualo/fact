@@ -1,0 +1,104 @@
+body.darkThemeCSS{
+    color: var(--bs-gray-200);
+}
+
+.darkThemeCSS .pageCover__header__logo__big{
+    display: none;
+}
+
+.darkThemeCSS .pageCover__header__logo__big--darkTheme{
+    display: block;
+}
+
+.darkThemeCSS .welcomeCard {
+    color: var(--colorBG);
+    background-color: var(--UI-color);
+}
+
+.darkThemeCSS .welcomeCard>li h3 {
+    color: var(--bs-gray-200);
+}
+
+.darkThemeCSS .popUpMenu a {
+    color: var(--colorFooterBG);
+}
+
+.darkThemeCSS .popUpMenu {
+    color: var(--colorFooterBG);
+    background: var(--colorThemeBlue);
+}
+
+.darkThemeCSS .popUpMenu:before {
+    border-color: transparent transparent var(--colorThemeBlue);
+}
+
+.darkThemeCSS .popUpMenu__dropmenu>li {
+    border-bottom-color: var(--bs-gray-900);
+}
+
+.darkThemeCSS .popUpMenu__dropmenu>li:after {
+    border-color: var(--bs-gray-700);
+}
+
+.darkThemeCSS .popUpMenu_tab>li>button.nav-link, 
+.darkThemeCSS .popUpMenu_tab>li>button.nav-link:hover, 
+.darkThemeCSS .popUpMenu_tab>li>button.nav-link:focus {
+    color: var(--themeColor);
+}
+
+.darkThemeCSS .popUpMenu_tab>li>button.nav-link.active {
+    border-bottom-color:var(--colorBG);
+    color: var(--colorBG);
+}
+
+.darkThemeCSS .cardBox__header h4 {
+    color: var(--colorCardHeaderBG);
+}
+
+.darkThemeCSS .cardBox__header {
+    background-color: var(--colorThemeBlue);
+}
+
+.darkThemeCSS .cardBox__content {
+    background-color: var(--UI-color);
+    color: var(--colorBG);
+}
+
+.darkThemeCSS .cardList>li {
+    color: var(--colorBG);
+    border-color: var(--colorThemeBlue);
+}
+
+.darkThemeCSS .cardList__info__digit i.bi {
+    background: var(--colorThemeBlue);
+}
+
+.darkThemeCSS .pageCover__body__right__footer {
+    background-color: var(--colorMainNavHighlite);
+    color: var(--colorFooterBG);
+}
+
+.darkThemeCSS .navCards__item h3 {
+    color: var(--colorBG);
+    background-color: var(--colorThemeBlue);
+}
+
+.darkThemeCSS .cardBox__content__right {
+    border-color: var(--colorThemeBlue);
+}
+
+.darkThemeCSS .navCards__item {
+    background-color: var(--bs-gray-400);
+}
+
+.darkThemeCSS .pageCover__body__right {
+    background-color: var(--bs-gray-700);
+}
+
+.darkThemeCSS .pageCover__header {
+    background-color: var(--bs-gray-dark);
+}
+
+.darkThemeCSS .headerNav>li button i.bi {
+    color: var(--colorCardHeaderBG);
+}
